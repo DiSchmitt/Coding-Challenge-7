@@ -1,3 +1,4 @@
+//U4888-2664
 //Task 3: Create a JavaScript file named script.js and write it to:
 document.getElementById("reviewForm").addEventListener("submit", (event) => {
   //Prevent the default form submission action to keep the page from reloading:
@@ -33,5 +34,4 @@ document.getElementById("reviewForm").addEventListener("submit", (event) => {
       `;
   }
 });
-//Accidently commited my forth commit version last time, but that is ok as the only thing that changed was adding
-//the comment lines on 23-27 as I am somewhat certain that I completed task 4 at the same time I completed task 3
+//I can't get the hang of commits, I forgot to add my U# last time so here is what is hopefully the final commit
