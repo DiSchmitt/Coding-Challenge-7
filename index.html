@@ -1,36 +1,51 @@
 <!--Task 1: Create an HTML file named index.html. This file will host the structure of the feedback form and link to your JavaScript file.-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding Challenge 7</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Task 2: Inside index.html, insert a <form> element that includes:-->
-    <form action="reviewForm">
-    <!--a text input for the customer’s name,-->
-    <label for="Name">Name: </label>
-    <input type="text" name="Name" id="Name"> <br>
-    <br>
-    <!--a dropdown selection for the customer to choose a rating from 1 to 5,-->
-    <label for="Rating">On a scale of 1-5 (with 1 being awful and 5 being awesome,) How would you rate your experience? </label> <br>
-    <select name="Rating" id="Rating"> 
+    <form id="reviewForm">
+      <!--a text input for the customer’s name,-->
+      <label for="Name">Name: </label>
+      <input type="text" name="Name" id="Name" /> <br />
+      <br />
+      <!--a dropdown selection for the customer to choose a rating from 1 to 5,-->
+      <label for="Rating"
+        >On a scale of 1-5 (with 1 being awful and 5 being awesome,) How would
+        you rate your experience?
+      </label>
+      <br />
+      <select name="Rating" id="Rating">
+        <option value=""></option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
-    </select> <br> 
-    <br>
-    <!--a textarea for customer comments,-->
-    <label for="Comment">Any comments, questions, or complaints would be much appreciated!</label> <br>
-    <textarea name="Comment" rows="12" cols="35"></textarea> <br>
-    <br>
-    <!--and a submit button.-->
-    <input type="submit" name="Submit">
-</form>
-<!--Below the form, add a <div> element where the feedback will be displayed after submission.-->
-<div id="Results"></div>
-<!--Task 3:Create a JavaScript file named script.js.-->
-<script src="script.js"></script>
-</body>
+      </select>
+      <br />
+      <br />
+      <!--a textarea for customer comments,-->
+      <label for="Comment"
+        >Any comments, questions, or complaints would be much
+        appreciated!</label
+      >
+      <br />
+      <textarea name="Comment" rows="12" cols="35" id="Comment"> </textarea>
+      <br />
+      <br />
+      <!--and a submit button.-->
+      <input type="submit" name="submit" />
+    </form>
+    <!--Below the form, add a <div> element where the feedback will be displayed after submission.-->
+    <div id="Results"></div>
+    <!--Task 3:Create a JavaScript file named script.js.-->
+
+    <!--This means that the JavaScript is not embeded so we need to grab the new file-->
+    <script src="script.js"></script>
+  </body>
 </html>
